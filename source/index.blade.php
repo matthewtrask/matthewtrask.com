@@ -1,50 +1,36 @@
 @extends('_layouts.main')
 
 @section('body')
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-6">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
-            @endif
+    <section class="max-w-2xl mx-auto px-6 py-16">
 
-            <p class="text-gray-700 font-medium my-2">
-                {{ $featuredPost->getDate()->format('F j, Y') }}
-            </p>
+        {{-- Intro --}}
+        <p class="font-mono text-[13px] text-gray-500 dark:text-gray-400 leading-relaxed mb-16">
+            Backend engineer. Writing about PHP, software architecture,<br class="hidden sm:inline">
+            and the craft of building reliable systems.
+        </p>
 
-            <h2 class="text-3xl mt-0">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-extrabold">
-                    {{ $featuredPost->title }}
-                </a>
-            </h2>
-
-            <p class="text-gray-700 font-medium my-2">
-                <b>{{ $featuredPost->getReadTime() }} {{ $featuredPost->getReadTime() > 1 ? 'minutes' : 'minute' }} read.</b>
-            </p>
-
-
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
-
-            <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase tracking-wide mb-4">
-                Read
-            </a>
-        </div>
-
-        <hr class="w-full border-b mt-2 mb-6">
-    @endforeach
-
-    @include('_components.newsletter-signup')
-
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
-        <div class="flex flex-col md:-mx-6">
-            @foreach ($row as $post)
-                <div class="w-full md:mx-6">
-                    @include('_components.post-preview-inline')
-                </div>
+        {{-- Recent posts --}}
+        <div class="divide-y divide-gray-100 dark:divide-gray-900">
+            @foreach ($posts->take(10) as $post)
+                <article>
+                    <a href="{{ $post->getUrl() }}" class="group flex items-baseline gap-5 sm:gap-8 py-3.5 -mx-2 px-2 rounded transition-colors duration-100 hover:bg-white dark:hover:bg-gray-900/60">
+                        <time class="font-mono text-[11px] text-gray-400 dark:text-gray-600 tabular-nums flex-shrink-0 w-[70px]">
+                            {{ date('M Y', $post->date) }}
+                        </time>
+                        <span class="text-[15px] text-gray-700 dark:text-gray-300 group-hover:text-gray-950 dark:group-hover:text-gray-50 transition-colors duration-100 leading-snug">
+                            {{ $post->title }}
+                        </span>
+                    </a>
+                </article>
             @endforeach
         </div>
 
-{{--        @if (! $loop->last)--}}
-{{--            <hr class="w-full border-b mt-2 mb-6">--}}
-{{--        @endif--}}
-    @endforeach
-@stop
+        {{-- All posts link --}}
+        <div class="mt-10">
+            <a href="/blog" class="font-mono text-[12px] text-gray-400 dark:text-gray-600 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                all posts →
+            </a>
+        </div>
+
+    </section>
+@endsection

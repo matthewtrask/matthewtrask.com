@@ -1,72 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
+<html lang="{{ $page->language ?? 'en' }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="canonical" href="{{ $page->getUrl() }}">
+    <meta name="description" content="{{ $page->description }}">
+    <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
 
-        <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
-        <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
-        <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+    {{-- Fonts: Syne (headings/brand), Source Serif 4 (body), JetBrains Mono (labels) --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+    <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
+    <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+</head>
+<body class="antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-200 font-sans">
 
-        <link rel="home" href="{{ $page->baseUrl }}">
-        <link rel="icon" href="/favicon.ico">
-        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
+{{-- Header --}}
+<header class="border-b border-gray-100 dark:border-gray-900">
+    <nav class="max-w-2xl mx-auto px-6 py-5">
+        <div class="flex items-center justify-between">
 
-        @if ($page->production)
-            <!-- Insert analytics code here -->
-        @endif
+            {{-- Brand --}}
+            <a href="/" class="group flex items-center gap-2">
+                <span class="font-sans font-bold text-[15px] tracking-tight text-gray-950 dark:text-gray-50">
+                    Matthew Trask
+                </span>
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 opacity-60 group-hover:opacity-100 transition-opacity duration-150 flex-shrink-0"></span>
+            </a>
 
-        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i" rel="stylesheet">
-        <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
-    </head>
-
-    <body class="flex flex-col justify-between min-h-screen bg-gray-100 text-gray-800 leading-normal font-sans">
-        <header class="flex items-center shadow bg-white border-b h-24 py-4" role="banner">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
-                <div class="flex items-center">
-                    <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
-                        <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="{{ $page->siteName }} logo" />
-
-                        <h1 class="text-lg md:text-2xl text-blue-800 font-semibold hover:text-blue-600 my-0">{{ $page->siteName }}</h1>
-                    </a>
-                </div>
-
-                <div id="vue-search" class="flex flex-1 justify-end items-center">
-                    @include('_components.search')
-
-                    @include('_nav.menu')
-
-                    @include('_nav.menu-toggle')
-                </div>
+            {{-- Nav --}}
+            <div class="flex items-center gap-5">
+                <a href="/blog" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
+                    writing
+                    <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
+                </a>
+                <a href="/about" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
+                    about
+                    <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
+                </a>
+                <button id="theme-toggle" class="text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors" aria-label="Toggle dark mode">
+                    {{-- Sun (shown in dark mode) --}}
+                    <svg class="w-[17px] h-[17px] hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    {{-- Moon (shown in light mode) --}}
+                    <svg class="w-[17px] h-[17px] dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                </button>
             </div>
-        </header>
 
-        @include('_nav.menu-responsive')
+        </div>
+    </nav>
+</header>
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
-            @yield('body')
-        </main>
+{{-- Main Content --}}
+<main>
+    @yield('body')
+</main>
 
-        <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
-                <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
-                </li>
+{{-- Footer --}}
+<footer class="border-t border-gray-100 dark:border-gray-900 mt-24">
+    <div class="max-w-2xl mx-auto px-6 py-8">
+        <div class="flex justify-between items-center">
+            <span class="font-mono text-xs text-gray-400 dark:text-gray-600">
+                &copy; {{ date('Y') }} Matthew Trask
+            </span>
+            <div class="flex items-center gap-4 font-mono text-xs">
+                <a href="https://github.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">github</a>
+                <a href="https://twitter.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">twitter</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                </li>
-            </ul>
-        </footer>
+<script>
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
 
-        <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-        @stack('scripts')
-    </body>
+    if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+        html.classList.add('dark');
+    }
+
+    themeToggle?.addEventListener('click', () => {
+        html.classList.toggle('dark');
+        localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+</script>
+</body>
 </html>

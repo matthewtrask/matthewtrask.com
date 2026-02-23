@@ -1,50 +1,39 @@
----
-title: Blog
-description: The list of blog posts for the site
-pagination:
-    collection: posts
-    perPage: 4
----
 @extends('_layouts.main')
 
 @section('body')
-    <h1>Blog</h1>
+    <section class="max-w-2xl mx-auto px-6 py-16">
 
-    <hr class="border-b my-6">
+        <h1 class="font-sans font-bold text-gray-950 dark:text-gray-50 text-lg tracking-tight mb-16">Writing</h1>
 
-    @foreach ($pagination->items as $post)
-        @include('_components.post-preview-inline')
+        @php
+            $grouped = collect($posts)->groupBy(function ($post) {
+                return date('Y', $post->date);
+            })->sortKeysDesc();
+        @endphp
 
-        @if ($post != $pagination->items->last())
-            <hr class="border-b my-6">
-        @endif
-    @endforeach
-
-    @if ($pagination->pages->count() > 1)
-        <nav class="flex text-base my-8">
-            @if ($previous = $pagination->previous)
-                <a
-                    href="{{ $previous }}"
-                    title="Previous Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
-                >&LeftArrow;</a>
-            @endif
-
-            @foreach ($pagination->pages as $pageNumber => $path)
-                <a
-                    href="{{ $path }}"
-                    title="Go to Page {{ $pageNumber }}"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3 {{ $pagination->currentPage == $pageNumber ? 'text-blue-600' : 'text-blue-700' }}"
-                >{{ $pageNumber }}</a>
+        <div class="space-y-12">
+            @foreach ($grouped as $year => $yearPosts)
+                <div>
+                    <div class="font-mono text-[11px] text-gray-400 dark:text-gray-600 mb-3 tracking-wider">
+                        {{ $year }}
+                    </div>
+                    <div class="divide-y divide-gray-100 dark:divide-gray-900">
+                        @foreach ($yearPosts as $post)
+                            <article>
+                                <a href="{{ $post->getUrl() }}" class="group flex items-baseline gap-5 sm:gap-8 py-3 -mx-2 px-2 rounded transition-colors duration-100 hover:bg-white dark:hover:bg-gray-900/60">
+                                    <time class="font-mono text-[11px] text-gray-400 dark:text-gray-600 tabular-nums flex-shrink-0 w-[52px]">
+                                        {{ date('M d', $post->date) }}
+                                    </time>
+                                    <span class="text-[15px] text-gray-700 dark:text-gray-300 group-hover:text-gray-950 dark:group-hover:text-gray-50 transition-colors duration-100 leading-snug">
+                                        {{ $post->title }}
+                                    </span>
+                                </a>
+                            </article>
+                        @endforeach
+                    </div>
+                </div>
             @endforeach
+        </div>
 
-            @if ($next = $pagination->next)
-                <a
-                    href="{{ $next }}"
-                    title="Next Page"
-                    class="bg-gray-200 hover:bg-gray-400 rounded mr-3 px-5 py-3"
-                >&RightArrow;</a>
-            @endif
-        </nav>
-    @endif
-@stop
+    </section>
+@endsection

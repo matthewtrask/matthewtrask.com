@@ -1,25 +1,35 @@
----
-title: About
-description: A little bit about the site
----
 @extends('_layouts.main')
 
 @section('body')
-    <h1>Hi! I'm Matt</h1>
+    <article class="max-w-2xl mx-auto px-6 py-16">
 
-    <img src="/assets/img/about.png"
-        alt="About image"
-        class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
+        <h1 class="font-sans font-bold text-gray-950 dark:text-gray-50 text-lg tracking-tight mb-12">About</h1>
 
+        <div class="font-serif text-[17px] text-gray-700 dark:text-gray-300 leading-[1.8] space-y-6">
+            <p>
+                I'm a backend engineer focused on building reliable, maintainable systems. Most of my work involves PHP, Laravel, and various cloud platforms.
+            </p>
+            <p>
+                I write to document what I learn and to help other engineers solve similar problems. The posts here cover software architecture, performance, infrastructure, and the occasional career reflection.
+            </p>
+            <p>
+                Currently interested in API design, database optimization, event-driven systems, and developer tooling. When I'm not coding, I'm usually reading technical books or working on open source.
+            </p>
+        </div>
 
-    <p class="mb-6">
-        At various points in my career I've been a <b>conference organizer</b>, <b>conference speaker</b>, <b>user group organizer</b>, <b>user group organizer</b>,
-        and podcast host. I am currently a lead at Ovia Health, a women's healthcare company aiming to help women and families on their family building journey.
+        <div class="mt-12 pt-8 border-t border-gray-100 dark:border-gray-900">
+            <div class="flex items-center gap-6 font-mono text-[13px] text-gray-500 dark:text-gray-400">
+                <a href="https://github.com/matthewtrask" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                    github
+                </a>
+                <a href="https://twitter.com/matthewtrask" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                    twitter
+                </a>
+                <a href="mailto:matt@matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                    email
+                </a>
+            </div>
+        </div>
 
-    </p><p class="mb-6">
-        I'm currently on a journey of my own, both learning concepts I didn't get to learn as I taught myself how to program and also looking to grow my own leadership skills.
-    </p>
-    <p class="mb-6">
-        You can find me at <a href="https://phpc.social/@matthewtrask">@matthewtrask</a> on the phpc mastodon network or send me an email at <a href="mailto:me@matthewtrask.com">me@matthewtrask.com</a>.
-    </p>
+    </article>
 @endsection

@@ -1,8 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 
-/* Code syntax highlighting, powered by https://highlightjs.org */
-@import 'highlight.js/styles/a11y-light.css';
+/* Code syntax highlighting — github-dark-dimmed pairs well with dark code blocks */
+@import 'highlight.js/styles/github-dark-dimmed.css';
 
 @import 'base';
 @import 'mailchimp';

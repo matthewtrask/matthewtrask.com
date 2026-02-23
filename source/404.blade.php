@@ -1,15 +1,23 @@
 @extends('_layouts.main')
 
 @section('body')
-    <div class="flex flex-col items-center text-gray-700 mt-32">
-        <h1 class="text-6xl font-light leading-none mb-2">404</h1>
+    <section class="max-w-2xl mx-auto px-6 py-24">
 
-        <h2 class="text-3xl">Page not found.</h2>
+        <div class="font-mono text-[11px] text-gray-400 dark:text-gray-600 mb-5 tracking-widest">
+            404
+        </div>
 
-        <hr class="block w-full max-w-sm mx-auto border my-8">
+        <h1 class="font-sans font-bold text-lg text-gray-950 dark:text-gray-50 mb-4 tracking-tight">
+            Page not found
+        </h1>
 
-        <p class="text-xl">
-            Need to update this page? See the <a title="404 Page Documentation" href="https://jigsaw.tighten.co/docs/custom-404-page/">Jigsaw documentation</a>.
+        <p class="font-serif text-[16px] text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
+            This page doesn't exist. You might have mistyped the address, or the page has moved.
         </p>
-    </div>
+
+        <a href="/" class="font-mono text-[12px] text-gray-400 dark:text-gray-600 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+            ← home
+        </a>
+
+    </section>
 @endsection
