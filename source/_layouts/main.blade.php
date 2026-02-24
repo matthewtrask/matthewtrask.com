@@ -93,7 +93,7 @@
 
 {{-- Footer --}}
 <footer class="border-t border-gray-100 dark:border-gray-900 mt-24">
-    <div class="max-w-3xl mx-auto px-6 py-8">
+    <div class="max-w-3xl mx-auto px-6 py-8 space-y-4">
         <div class="flex justify-between items-center">
             <span class="font-mono text-xs text-gray-400 dark:text-gray-600">
                 &copy; {{ date('Y') }} Matthew Trask
@@ -103,6 +103,11 @@
                 <a href="https://twitter.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">twitter</a>
                 <a href="/feeds" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">rss</a>
             </div>
+        </div>
+        <div class="flex items-center gap-4 font-mono text-xs">
+            <a href="/now" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/now</a>
+            <a href="/uses" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/uses</a>
+            <a href="/colophon" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/colophon</a>
         </div>
     </div>
 </footer>
