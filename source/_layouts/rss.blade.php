@@ -1,11 +1,11 @@
-<?php '<'.'?'.'xml version="1.0" encoding="UTF-8"?>' ?>
+<?= '<'.'?'.'xml version="1.0" encoding="UTF-8"?>' ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>{{ $page->siteName }}</title>
         <link>{{ $page->baseUrl }}</link>
         <description>{{ $page->siteDescription }}</description>
         <language>en-us</language>
-        <atom:link href="{{ $page->baseUrl }}/blog/feed" rel="self" type="application/rss+xml" />
+        <atom:link href="{{ $page->baseUrl }}/blog/feed.xml" rel="self" type="application/rss+xml" />
 
         @foreach ($posts->take(20) as $post)
             <item>

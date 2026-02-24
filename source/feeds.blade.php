@@ -20,9 +20,9 @@
                 <p class="font-serif text-[15px] text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                     Every post, regardless of category.
                 </p>
-                <a href="/blog/feed"
+                <a href="/blog/feed.xml"
                    class="font-mono text-[13px] text-cyan-600 dark:text-cyan-400 hover:underline underline-offset-2 break-all">
-                    {{ $page->baseUrl }}/blog/feed
+                    {{ $page->baseUrl }}/blog/feed.xml
                 </a>
             </div>
 
