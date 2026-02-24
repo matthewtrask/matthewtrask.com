@@ -1,5 +1,31 @@
 @extends('_layouts.main')
 
+@section('meta')
+    {{-- Article-specific Open Graph --}}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ date('c', $page->date) }}">
+    <meta property="article:author" content="{{ $page->siteAuthor }}">
+    @if ($page->categories)
+        @foreach ($page->categories as $cat)
+            <meta property="article:tag" content="{{ $cat }}">
+        @endforeach
+    @endif
+    @if ($page->cover_image)
+        <meta property="og:image" content="{{ $page->baseUrl }}{{ $page->cover_image }}">
+        <meta name="twitter:image" content="{{ $page->baseUrl }}{{ $page->cover_image }}">
+        <meta name="twitter:card" content="summary_large_image">
+    @endif
+
+    {{-- Per-category RSS autodiscovery --}}
+    @if ($page->categories)
+        @foreach ($page->categories as $cat)
+            <link rel="alternate" type="application/rss+xml"
+                  title="{{ $page->siteName }} – {{ $cat }}"
+                  href="{{ $page->baseUrl }}/feeds/{{ $cat }}.xml">
+        @endforeach
+    @endif
+@endsection
+
 @section('body')
     <article class="max-w-2xl mx-auto px-6 py-20">
 
@@ -10,9 +36,15 @@
 
         {{-- Post header --}}
         <header class="mb-14">
-            <time class="font-mono text-[12px] text-gray-400 dark:text-gray-600 block mb-4 tracking-wide">
-                {{ date('F j, Y', $page->date) }}
-            </time>
+            <div class="flex items-center gap-3 mb-4">
+                <time class="font-mono text-[12px] text-gray-400 dark:text-gray-600 tracking-wide">
+                    {{ date('F j, Y', $page->date) }}
+                </time>
+                <span class="font-mono text-[12px] text-gray-300 dark:text-gray-700">·</span>
+                <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600">
+                    {{ $page->getReadTime() }} min read
+                </span>
+            </div>
 
             <h1 class="font-sans font-bold text-3xl sm:text-[32px] text-gray-950 dark:text-gray-50 leading-tight tracking-tight mb-6">
                 {{ $page->title }}

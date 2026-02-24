@@ -14,6 +14,25 @@
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+
+    {{-- Open Graph --}}
+    <meta property="og:site_name" content="{{ $page->siteName }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' . $page->siteName : $page->siteName }}">
+    <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}">
+    <meta property="og:url" content="{{ $page->getUrl() }}">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@matthewtrask">
+    <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' . $page->siteName : $page->siteName }}">
+    <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
+
+    {{-- RSS autodiscovery — feed readers pick this up automatically --}}
+    <link rel="alternate" type="application/rss+xml" title="{{ $page->siteName }}" href="{{ $page->baseUrl }}/blog/feed.xml">
+
+    {{-- Slot for page-specific meta (article tags, category feeds, og:image, etc.) --}}
+    @yield('meta')
 </head>
 <body class="antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-200 font-sans">
 

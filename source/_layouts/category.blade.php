@@ -1,5 +1,12 @@
 @extends('_layouts.main')
 
+@section('meta')
+    {{-- Autodiscovery for this category's RSS feed --}}
+    <link rel="alternate" type="application/rss+xml"
+          title="{{ $page->siteName }} – {{ $page->title }}"
+          href="{{ $page->baseUrl }}/feeds/{{ $page->getFilename() }}.xml">
+@endsection
+
 @section('body')
     <section class="max-w-3xl mx-auto px-6 py-20">
 
