@@ -20,7 +20,7 @@ description: What I'm currently focused on.
                 <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-4">
                     <p>
                         <!-- Replace with what you're currently building/working on -->
-                        Building out this site and writing more consistently. Working on open source PHP tooling and contributing to projects in the Laravel ecosystem.
+                        Building out this site and writing more consistently. Working on a deeper understanding of the Laravel framework, the PHP core language, Python, AWS CDK, and leadership. Also working on rebuilding my curiousity.
                     </p>
                 </div>
             </section>
@@ -32,7 +32,7 @@ description: What I'm currently focused on.
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>A Philosophy of Software Design</em> — John Ousterhout
+                            <em>Why We Remember</em> —  Charan Ranganath, PhD
                         </span>
                     </div>
                     <div class="flex items-baseline gap-4">
@@ -49,7 +49,7 @@ description: What I'm currently focused on.
                 <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-4">
                     <p>
                         <!-- Replace with what you're learning/exploring -->
-                        Digging deeper into event-driven architecture patterns, and exploring Rust for systems-level tooling.
+                        Digging deeper into AWS CDK, Python, and general developer tooling. Refreshing my OpenAPI knowledge.
                     </p>
                 </div>
             </section>
@@ -59,12 +59,16 @@ description: What I'm currently focused on.
                 <div class="space-y-3">
                     <!-- Replace with what you're listening to -->
                     <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">podcast</span>
-                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">Laravel Podcast</span>
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>The British Are Coming</em> — Rick Atkinson
+                        </span>
                     </div>
                     <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">podcast</span>
-                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">Software Engineering Daily</span>
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>Thinking In Systems</em> — Donella Meadows
+                        </span>
                     </div>
                 </div>
             </section>
