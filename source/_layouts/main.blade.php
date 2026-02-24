@@ -47,6 +47,10 @@
                     about
                     <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
                 </a>
+                <a href="/feeds" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
+                    rss
+                    <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
+                </a>
                 <button id="theme-toggle" class="text-gray-400 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors" aria-label="Toggle dark mode">
                     {{-- Sun (shown in dark mode) --}}
                     <svg class="w-[17px] h-[17px] hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
