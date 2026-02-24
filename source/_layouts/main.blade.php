@@ -23,11 +23,11 @@
     <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}">
     <meta property="og:url" content="{{ $page->getUrl() }}">
 
-    {{-- Twitter Card --}}
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@matthewtrask">
-    <meta name="twitter:title" content="{{ $page->title ? $page->title . ' | ' . $page->siteName : $page->siteName }}">
-    <meta name="twitter:description" content="{{ $page->description ?? $page->siteDescription }}">
+    {{-- Bluesky / Open Graph card --}}
+    <meta name="og:card" content="summary">
+    <meta name="og:site" content="@matthewtrask.com">
+    <meta name="og:title" content="{{ $page->title ? $page->title . ' | ' . $page->siteName : $page->siteName }}">
+    <meta name="og:description" content="{{ $page->description ?? $page->siteDescription }}">
 
     {{-- RSS autodiscovery — feed readers pick this up automatically --}}
     <link rel="alternate" type="application/rss+xml" title="{{ $page->siteName }}" href="{{ $page->baseUrl }}/blog/feed.xml">
@@ -117,7 +117,7 @@
             </span>
             <div class="flex items-center gap-4 font-mono text-xs">
                 <a href="https://github.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">github</a>
-                <a href="https://twitter.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">twitter</a>
+                <a href="https://bsky.app/profile/matthewtrask.com" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">bluesky</a>
                 <a href="/feeds" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">rss</a>
             </div>
         </div>

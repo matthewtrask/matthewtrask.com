@@ -22,8 +22,8 @@
                 <a href="https://github.com/matthewtrask" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     github
                 </a>
-                <a href="https://twitter.com/matthewtrask" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
-                    twitter
+                <a href="https://bsky.app/profile/matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                    bluesky
                 </a>
                 <a href="mailto:matt@matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     email

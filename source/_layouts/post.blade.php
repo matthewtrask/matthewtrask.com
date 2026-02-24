@@ -12,8 +12,7 @@
     @endif
     @if ($page->cover_image)
         <meta property="og:image" content="{{ $page->baseUrl }}{{ $page->cover_image }}">
-        <meta name="twitter:image" content="{{ $page->baseUrl }}{{ $page->cover_image }}">
-        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image:large" content="{{ $page->baseUrl }}{{ $page->cover_image }}">
     @endif
 
     {{-- Per-category RSS autodiscovery --}}

@@ -115,7 +115,7 @@ description: How this site is built, what it runs on, and the tools behind it.
                             'Per-category RSS'    => 'Each topic has its own feed. Subscribe to only what you want.',
                             'Reading time'        => 'Estimated on every post. Calculated server-side at build time.',
                             'Code copy button'    => 'Appears on hover over any code block. Copies to clipboard.',
-                            'Open Graph tags'     => 'Every page and post has full OG + Twitter Card meta.',
+                            'Open Graph tags'     => 'Every page and post has full OG meta for rich link previews.',
                             'RSS autodiscovery'   => 'Feed readers find per-category feeds automatically via <link> tags.',
                         ];
                     @endphp
