@@ -108,6 +108,7 @@
             <a href="/now" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/now</a>
             <a href="/uses" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/uses</a>
             <a href="/colophon" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/colophon</a>
+            <a href="/resume" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">/resume</a>
         </div>
     </div>
 </footer>
