@@ -20,6 +20,8 @@ description: Matt Trask — Senior Software Engineer & Team Lead. PHP, Laravel, 
                 <a href="https://github.com/matthewtrask" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">github</a>
                 <span>·</span>
                 <a href="https://bsky.app/profile/matthewtrask.com" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">bluesky</a>
+                <span>·</span>
+                <a href="https://www.linkedin.com/in/matthew-trask/" class="hover:text-gray-700 dark:hover:text-gray-300 transition-colors">linkedin</a>
             </div>
         </div>
 

@@ -118,6 +118,7 @@
             <div class="flex items-center gap-4 font-mono text-xs">
                 <a href="https://github.com/matthewtrask" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">github</a>
                 <a href="https://bsky.app/profile/matthewtrask.com" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">bluesky</a>
+                <a href="https://www.linkedin.com/in/matthew-trask/" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">linkedin</a>
                 <a href="/feeds" class="text-gray-400 dark:text-gray-600 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">rss</a>
             </div>
         </div>

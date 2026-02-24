@@ -25,6 +25,9 @@
                 <a href="https://bsky.app/profile/matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     bluesky
                 </a>
+                <a href="https://www.linkedin.com/in/matthew-trask/" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                    linkedin
+                </a>
                 <a href="mailto:matt@matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     email
                 </a>
