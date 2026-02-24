@@ -17,9 +17,12 @@
 </head>
 <body class="antialiased bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-200 font-sans">
 
+{{-- Signature gradient bar --}}
+<div class="h-[2px] bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500"></div>
+
 {{-- Header --}}
 <header class="border-b border-gray-100 dark:border-gray-900">
-    <nav class="max-w-2xl mx-auto px-6 py-5">
+    <nav class="max-w-3xl mx-auto px-6 py-6">
         <div class="flex items-center justify-between">
 
             {{-- Brand --}}
@@ -31,9 +34,13 @@
             </a>
 
             {{-- Nav --}}
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-6">
                 <a href="/blog" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
                     writing
+                    <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
+                </a>
+                <a href="/categories" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
+                    topics
                     <span class="absolute -bottom-0.5 left-0 right-0 h-px bg-cyan-400 scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></span>
                 </a>
                 <a href="/about" class="relative font-mono text-[13px] text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-150 group">
@@ -63,7 +70,7 @@
 
 {{-- Footer --}}
 <footer class="border-t border-gray-100 dark:border-gray-900 mt-24">
-    <div class="max-w-2xl mx-auto px-6 py-8">
+    <div class="max-w-3xl mx-auto px-6 py-8">
         <div class="flex justify-between items-center">
             <span class="font-mono text-xs text-gray-400 dark:text-gray-600">
                 &copy; {{ date('Y') }} Matthew Trask

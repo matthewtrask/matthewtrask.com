@@ -1,11 +1,11 @@
 @extends('_layouts.main')
 
 @section('body')
-    <article class="max-w-2xl mx-auto px-6 py-16">
+    <article class="max-w-3xl mx-auto px-6 py-20">
 
-        <h1 class="font-sans font-bold text-gray-950 dark:text-gray-50 text-lg tracking-tight mb-12">About</h1>
+        <h1 class="font-sans font-bold text-gray-950 dark:text-gray-50 text-xl tracking-tight mb-14">About</h1>
 
-        <div class="font-serif text-[17px] text-gray-700 dark:text-gray-300 leading-[1.8] space-y-6">
+        <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-6 max-w-2xl">
             <p>
                 I'm a backend engineer focused on building reliable, maintainable systems. Most of my work involves PHP, Laravel, and various cloud platforms.
             </p>
@@ -17,7 +17,7 @@
             </p>
         </div>
 
-        <div class="mt-12 pt-8 border-t border-gray-100 dark:border-gray-900">
+        <div class="mt-14 pt-8 border-t border-gray-100 dark:border-gray-900">
             <div class="flex items-center gap-6 font-mono text-[13px] text-gray-500 dark:text-gray-400">
                 <a href="https://github.com/matthewtrask" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     github
