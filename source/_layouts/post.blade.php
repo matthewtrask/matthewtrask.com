@@ -24,6 +24,34 @@
                   href="{{ $page->baseUrl }}/feeds/{{ $cat }}.xml">
         @endforeach
     @endif
+
+    {{-- BlogPosting structured data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ $page->title }}",
+        "description": "{{ $page->description }}",
+        "url": "{{ $page->getUrl() }}",
+        "datePublished": "{{ date('c', $page->date) }}",
+        "dateModified": "{{ date('c', $page->date) }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ $page->siteAuthor }}",
+            "url": "{{ $page->baseUrl }}"
+        },
+        "publisher": {
+            "@type": "Person",
+            "name": "{{ $page->siteAuthor }}",
+            "url": "{{ $page->baseUrl }}"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ $page->getUrl() }}"
+        }@if ($page->cover_image),
+        "image": "{{ $page->baseUrl }}{{ $page->cover_image }}"@endif
+    }
+    </script>
 @endsection
 
 @section('body')

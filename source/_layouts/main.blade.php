@@ -31,6 +31,22 @@
     {{-- RSS autodiscovery — feed readers pick this up automatically --}}
     <link rel="alternate" type="application/rss+xml" title="{{ $page->siteName }}" href="{{ $page->baseUrl }}/blog/feed.xml">
 
+    {{-- WebSite structured data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "{{ $page->siteName }}",
+        "url": "{{ $page->baseUrl }}",
+        "description": "{{ $page->siteDescription }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ $page->siteAuthor }}",
+            "url": "{{ $page->baseUrl }}"
+        }
+    }
+    </script>
+
     {{-- Slot for page-specific meta (article tags, category feeds, og:image, etc.) --}}
     @yield('meta')
 </head>
