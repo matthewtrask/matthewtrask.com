@@ -60,31 +60,7 @@
         </header>
 
         {{-- Post content --}}
-        <div class="
-            prose prose-gray dark:prose-invert max-w-none
-
-            [&_p]:font-serif [&_p]:text-[18px] [&_p]:leading-[1.85] [&_p]:text-gray-700 dark:[&_p]:text-gray-300
-            [&_li]:font-serif [&_li]:text-[18px] [&_li]:leading-[1.8] [&_li]:text-gray-700 dark:[&_li]:text-gray-300
-            [&_blockquote_p]:font-serif
-
-            prose-headings:font-sans prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-gray-900 dark:prose-headings:text-gray-100
-            prose-h2:text-[22px] prose-h2:mt-14 prose-h2:mb-4
-            prose-h3:text-[18px] prose-h3:mt-10 prose-h3:mb-3
-
-            prose-a:text-cyan-600 dark:prose-a:text-cyan-400 prose-a:font-normal prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-2
-
-            prose-strong:text-gray-900 dark:prose-strong:text-gray-100 prose-strong:font-semibold
-
-            prose-code:font-mono prose-code:text-[0.875em] prose-code:text-gray-800 dark:prose-code:text-gray-200 prose-code:bg-gray-100 dark:prose-code:bg-gray-900 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none
-
-            prose-pre:bg-gray-950 dark:prose-pre:bg-black prose-pre:border prose-pre:border-gray-800 dark:prose-pre:border-gray-900 prose-pre:rounded-xl prose-pre:my-8
-
-            prose-blockquote:border-l-2 prose-blockquote:border-cyan-400 prose-blockquote:pl-5 prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-400 prose-blockquote:not-italic
-
-            prose-img:rounded-xl prose-img:border prose-img:border-gray-100 dark:prose-img:border-gray-900
-
-            prose-hr:border-gray-100 dark:prose-hr:border-gray-900
-        ">
+        <div class="prose prose-gray dark:prose-invert max-w-none post-content">
             @yield('content')
         </div>
 
