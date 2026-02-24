@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    <script defer src="/_vercel/insights/script.js"></script>
 
     {{-- Open Graph --}}
     <meta property="og:site_name" content="{{ $page->siteName }}">
