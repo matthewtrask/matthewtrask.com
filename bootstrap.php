@@ -14,11 +14,15 @@
  * });
  */
 
+use App\Listeners\GenerateCategoryPages;
+use App\Listeners\GenerateIndex;
+use App\Listeners\GenerateSitemap;
 use App\Listeners\GenerateTagFeeds;
-use TightenCo\Jigsaw\Jigsaw;
 
-$events->afterBuild(App\Listeners\GenerateSitemap::class);
-$events->afterBuild(App\Listeners\GenerateIndex::class);
+$events->beforeBuild(GenerateCategoryPages::class);
+
+$events->afterBuild(GenerateSitemap::class);
+$events->afterBuild(GenerateIndex::class);
 
 $events->afterCollections(function ($jigsaw) {
     $jigsaw->getCollection('posts')->map(function ($post) {
