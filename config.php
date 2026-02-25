@@ -15,6 +15,9 @@ return [
             'author' => 'Author Name', // Default author, if not provided in a post
             'sort' => '-date',
             'path' => 'blog/{filename}',
+            'filter' => function ($item) {
+                return $item->published !== false;
+            },
         ],
         'categories' => [
             'path' => '/blog/categories/{filename}',
