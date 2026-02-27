@@ -48,6 +48,11 @@
     }
     </script>
 
+    {{-- Default OG image (overridden per-post via @section('meta')) --}}
+    <meta property="og:image"        content="{{ $page->baseUrl }}/api/og?title={{ urlencode($page->siteName) }}">
+    <meta property="og:image:width"  content="1200">
+    <meta property="og:image:height" content="630">
+
     {{-- Slot for page-specific meta (article tags, category feeds, og:image, etc.) --}}
     @yield('meta')
 </head>
