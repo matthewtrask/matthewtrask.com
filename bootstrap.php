@@ -25,27 +25,9 @@ $events->afterBuild(GenerateSitemap::class);
 $events->afterBuild(GenerateIndex::class);
 
 $events->afterCollections(function ($jigsaw) {
-    $jigsaw->getCollection('posts')->map(function ($post) {
-        $post->getExcerpt = function ($length = 255) use ($post) {
-            if ($post->description) {
-                return $post->description;
-            }
-
-            $content = strip_tags($post->getContent());
-
-            if (strlen($content) <= $length) {
-                return $content;
-            }
-
-            return substr($content, 0, $length) . '...';
-        };
-
-        $post->getReadTime = function () use ($post) {
-            $wordCount = str_word_count(strip_tags($post->getContent()));
-            return max(1, (int) ceil($wordCount / 200)); // 200 words per minute
-        };
-
-        return $post;
+    $jigsaw->getCollection('posts')->each(function ($post) {
+        $wordCount = str_word_count(strip_tags($post->getContent() ?? ''));
+        $post->put('readTime', max(1, (int) ceil($wordCount / 200)));
     });
 });
 
