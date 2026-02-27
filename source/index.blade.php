@@ -5,18 +5,18 @@
 
         {{-- Intro --}}
         <div class="mb-16">
-            <p class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-                Backend engineer. Writing about PHP, software architecture,
-                and the craft of building reliable systems.
+
+            {{-- Gradient rule — echoes the top bar --}}
+            <div class="flex items-center gap-4 mb-8">
+                <div class="h-[2px] w-8 bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-500 rounded-full"></div>
+                <span class="font-mono text-[11px] text-gray-400 dark:text-gray-600 tracking-widest uppercase">backend engineer · writer</span>
+            </div>
+
+            {{-- One-liner --}}
+            <p class="font-sans font-bold text-[18px] text-gray-600 dark:text-gray-400 leading-[1.75] mb-8 max-w-[540px]">
+                Thoughts on programming, leadership, and systems — the things I wish I'd found when I was figuring them out.
             </p>
-            {{-- Category chips — quick way to browse by topic --}}
-            @if ($categories->count())
-                <div class="flex flex-wrap gap-2">
-                    @foreach ($categories as $category)
-                        @include('_components.category-badge', ['category' => $category->getFilename()])
-                    @endforeach
-                </div>
-            @endif
+
         </div>
 
         {{-- Recent posts --}}
