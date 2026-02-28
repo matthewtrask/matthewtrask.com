@@ -33,6 +33,11 @@ jobs:
     - name: Build Site
       run: npm run prod
 
+    - name: Copy Edge Functions into build
+      run: |
+        cp -r api build_production/
+        printf '{"dependencies":{"@vercel/og":"^0.9.0"}}' > build_production/package.json
+
     - name: Stage Files
       run: git add -f build_production
       

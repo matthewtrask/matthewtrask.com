@@ -1,5 +1,4 @@
 {
-  "outputDirectory": "build_production",
   "cleanUrls": true,
   "trailingSlash": false
 }
