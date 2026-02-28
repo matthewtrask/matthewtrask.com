@@ -5,7 +5,7 @@ title: Advice I love
 date: 2026-02-25
 description: Bits and pieces of advice I've picked up over the years.
 cover_image: /assets/img/post-cover-image-2.png
-categories: [software development, leadership]
+categories: [software-development, leadership]
 published: true
 ---
 

@@ -29,7 +29,8 @@ class GenerateCategoryPages
         }
 
         foreach (array_unique(array_filter($found)) as $category) {
-            $path = $categoriesDir . '/' . $category . '.md';
+            $slug = str_replace(' ', '-', strtolower($category));
+            $path = $categoriesDir . '/' . $slug . '.md';
             if (! file_exists($path)) {
                 $title = ucwords($category);
                 file_put_contents($path, implode("\n", [
