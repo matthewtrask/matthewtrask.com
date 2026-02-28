@@ -15,6 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Set up PHP with GD
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: gd, freetype
+
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v3
@@ -32,11 +38,6 @@ jobs:
 
     - name: Build Site
       run: npm run prod
-
-    - name: Copy Edge Functions into build
-      run: |
-        cp -r api build_production/
-        printf '{"dependencies":{"@vercel/og":"^0.9.0"}}' > build_production/package.json
 
     - name: Stage Files
       run: git add -f build_production
