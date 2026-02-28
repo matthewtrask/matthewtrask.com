@@ -10,15 +10,7 @@
             <meta property="article:tag" content="{{ $cat }}">
         @endforeach
     @endif
-    @php
-        $ogCategory = $page->categories ? $page->categories[0] : '';
-        $ogDate     = date('M Y', $page->date);
-        $ogImage    = $page->baseUrl . '/api/og'
-            . '?title='    . urlencode($page->title)
-            . '&date='     . urlencode($ogDate)
-            . '&category=' . urlencode($ogCategory);
-    @endphp
-    <meta property="og:image"       content="{{ $ogImage }}">
+    <meta property="og:image"        content="{{ $page->baseUrl }}/assets/og/{{ $page->getFilename() }}.png">
     <meta property="og:image:width"  content="1200">
     <meta property="og:image:height" content="630">
 

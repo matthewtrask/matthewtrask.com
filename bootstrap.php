@@ -16,6 +16,7 @@
 
 use App\Listeners\GenerateCategoryPages;
 use App\Listeners\GenerateIndex;
+use App\Listeners\GenerateOgImages;
 use App\Listeners\GenerateSitemap;
 use App\Listeners\GenerateTagFeeds;
 
@@ -23,6 +24,7 @@ $events->beforeBuild(GenerateCategoryPages::class);
 
 $events->afterBuild(GenerateSitemap::class);
 $events->afterBuild(GenerateIndex::class);
+$events->afterBuild(GenerateOgImages::class);
 
 $events->afterCollections(function ($jigsaw) {
     $jigsaw->getCollection('posts')->each(function ($post) {
