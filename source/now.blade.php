@@ -32,7 +32,7 @@ description: What I'm currently focused on.
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Why We Remember</em> —  Charan Ranganath, PhD
+                            <em>The Inner Game Of Tennis</em> —  Timothy Gallwey
                         </span>
                     </div>
                     <div class="flex items-baseline gap-4">
@@ -68,6 +68,37 @@ description: What I'm currently focused on.
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
                             <em>Thinking In Systems</em> — Donella Meadows
+                        </span>
+                    </div>
+                    <div class="flex items-baseline gap-4">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>Sean Costello (Self titled album)</em> — Sean Costello
+                        </span>
+                    </div>
+                    <div class="flex items-baseline gap-4">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>Straylight Run</em> — Straylight Run
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="font-mono text-[11px] uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-5">Playing</h2>
+                <div class="space-y-3">
+                    <!-- Replace with what you're listening to -->
+                    <div class="flex items-baseline gap-4">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">mobile game</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>Star Wars: Galaxy of Heroes</em>
+                        </span>
+                    </div>
+                    <div class="flex items-baseline gap-4">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">playstation</span>
+                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
+                            <em>Battlefield 6</em>
                         </span>
                     </div>
                 </div>
