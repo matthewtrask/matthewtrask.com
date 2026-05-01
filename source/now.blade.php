@@ -32,7 +32,7 @@ description: What I'm currently focused on.
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>The Inner Game Of Tennis</em> —  Timothy Gallwey
+                            <em>The Stranger</em> —  Albert Camus
                         </span>
                     </div>
                     <div class="flex items-baseline gap-4">
@@ -50,6 +50,7 @@ description: What I'm currently focused on.
                     <p>
                         <!-- Replace with what you're learning/exploring -->
                         Digging deeper into AWS CDK, Python, and general developer tooling. Refreshing my OpenAPI knowledge.
+                        Leveraging Claude more into my day to day life and at work.
                     </p>
                 </div>
             </section>
@@ -57,29 +58,16 @@ description: What I'm currently focused on.
             <section>
                 <h2 class="font-mono text-[11px] uppercase tracking-widest text-gray-400 dark:text-gray-600 mb-5">Listening to</h2>
                 <div class="space-y-3">
-                    <!-- Replace with what you're listening to -->
                     <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>The British Are Coming</em> — Rick Atkinson
-                        </span>
-                    </div>
-                    <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
-                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Thinking In Systems</em> — Donella Meadows
+                            <em>Beneath Medicine Tree</em> — Copeland
                         </span>
                     </div>
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Sean Costello (Self titled album)</em> — Sean Costello
-                        </span>
-                    </div>
-                    <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
-                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Straylight Run</em> — Straylight Run
+                            <em>Being No One, Going Nowhere</em> — Strfkr
                         </span>
                     </div>
                 </div>
