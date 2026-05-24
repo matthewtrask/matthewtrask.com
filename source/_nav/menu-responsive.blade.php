@@ -9,6 +9,13 @@
         </li>
         <li class="pl-4">
             <a
+                title="{{ $page->siteName }} Books"
+                href="/books"
+                class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/books') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"
+            >Books</a>
+        </li>
+        <li class="pl-4">
+            <a
                 title="{{ $page->siteName }} About"
                 href="/about"
                 class="block mt-0 mb-4 text-sm no-underline {{ $page->isActive('/about') ? 'active text-blue-500' : 'text-gray-800 hover:text-blue-500' }}"

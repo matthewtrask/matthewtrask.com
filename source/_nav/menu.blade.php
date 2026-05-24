@@ -4,6 +4,11 @@
         Blog
     </a>
 
+    <a title="{{ $page->siteName }} Books" href="/books"
+        class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/books') ? 'active text-blue-600' : '' }}">
+        Books
+    </a>
+
     <a title="{{ $page->siteName }} About" href="/about"
         class="ml-6 text-gray-700 hover:text-blue-600 {{ $page->isActive('/about') ? 'active text-blue-600' : '' }}">
         About

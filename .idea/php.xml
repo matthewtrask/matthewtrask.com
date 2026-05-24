@@ -77,7 +77,75 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/filesystem" />
       <path value="$PROJECT_DIR$/vendor/psr/clock" />
       <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/samdark/sitemap" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/league/config" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/bus" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/console" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/view" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/events" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/pipeline" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/illuminate/conditionable" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/michelf/php-markdown" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/carbonphp/carbon-doctrine-types" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/spatie/error-solutions" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/mnapoli/front-yaml" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/composer" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/tightenco/jigsaw" />
+      <path value="$PROJECT_DIR$/.claude/worktrees/determined-rhodes/vendor/tightenco/jigsaw-blog-template" />
     </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
   </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />

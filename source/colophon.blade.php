@@ -53,6 +53,39 @@ description: How this site is built, what it runs on, and the tools behind it.
                             </p>
                         </div>
                     </div>
+                    <div class="flex gap-6">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 w-[70px] flex-shrink-0 mt-0.5">colors</span>
+                        <div>
+                            <p class="font-sans text-[15px] font-medium text-gray-900 dark:text-gray-100">Cyan accent · Gray scale</p>
+                            <p class="font-serif text-[16px] text-gray-500 dark:text-gray-500 leading-relaxed mt-1">
+                                Accent is <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">cyan-600</code> (<code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">#0891b2</code>) in light mode and <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">cyan-400</code> (<code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">#22d3ee</code>) in dark mode — used for links, hover states, and category labels. Text hierarchy runs from <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">gray-950</code> for headings down through <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">gray-700</code> for body copy and <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">gray-400</code> for metadata. Text selection uses a 25% cyan overlay.
+                            </p>
+                            <div class="flex items-center gap-2 mt-3">
+                                <span class="w-5 h-5 rounded-sm bg-[#0891b2]" title="cyan-600 — light accent"></span>
+                                <span class="w-5 h-5 rounded-sm bg-[#22d3ee]" title="cyan-400 — dark accent"></span>
+                                <span class="w-5 h-5 rounded-sm bg-gray-950 border border-gray-200 dark:border-gray-700" title="gray-950 — headings"></span>
+                                <span class="w-5 h-5 rounded-sm bg-gray-700" title="gray-700 — body"></span>
+                                <span class="w-5 h-5 rounded-sm bg-gray-400" title="gray-400 — metadata"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 w-[70px] flex-shrink-0 mt-0.5">type scale</span>
+                        <div>
+                            <p class="font-sans text-[15px] font-medium text-gray-900 dark:text-gray-100">Custom 6-step scale</p>
+                            <p class="font-serif text-[16px] text-gray-500 dark:text-gray-500 leading-relaxed mt-1">
+                                A tighter-than-default scale overrides Tailwind's defaults:
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">xs</code> 0.8 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">sm</code> 0.925 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">base</code> 1 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">lg</code> 1.125 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">xl</code> 1.25 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">2xl</code> 1.5 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">3xl</code> 1.75 rem ·
+                                <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">4xl</code> 2.125 rem. Line heights: <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">normal</code> 1.6, <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">loose</code> 1.75.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -97,7 +130,7 @@ description: How this site is built, what it runs on, and the tools behind it.
                     <div class="flex gap-6">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 w-[70px] flex-shrink-0 mt-0.5">host</span>
                         <div>
-                            <p class="font-sans text-[15px] font-medium text-gray-900 dark:text-gray-100">GitHub Pages</p>
+                            <p class="font-sans text-[15px] font-medium text-gray-900 dark:text-gray-100">Vercel</p>
                             <p class="font-serif text-[16px] text-gray-500 dark:text-gray-500 leading-relaxed mt-1">
                                 Serves the static build from the <code class="font-mono text-[0.875em] bg-gray-100 dark:bg-gray-900 px-1.5 py-0.5 rounded text-gray-800 dark:text-gray-200">main</code> branch. Zero server maintenance, free, fast.
                             </p>
