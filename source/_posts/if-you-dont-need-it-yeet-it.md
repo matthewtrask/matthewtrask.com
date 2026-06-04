@@ -6,6 +6,7 @@ date: 2026-03-12
 description: Stop cluttering repos with useless files.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [software]
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mn5qh4i63o2z
 published: true
 ---
 

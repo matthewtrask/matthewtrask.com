@@ -23,6 +23,11 @@
         @endforeach
     @endif
 
+    {{-- standard.site AT Protocol verification --}}
+    @if ($page->atUri)
+        <link rel="alternate" type="application/json+atproto" href="{{ $page->atUri }}">
+    @endif
+
     {{-- BlogPosting structured data --}}
     <script type="application/ld+json">
     {

@@ -6,6 +6,7 @@ date: 2026-03-03
 description: Even caring just 15% will help you go a long way.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [life, career]
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mn5qh4k2o72v
 published: true
 ---
 

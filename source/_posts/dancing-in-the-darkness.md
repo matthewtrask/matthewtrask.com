@@ -6,6 +6,7 @@ date: 2026-05-01
 description: You don't have to go through things alone.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [life]
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mn5qh4gek72i
 published: true
 ---
 

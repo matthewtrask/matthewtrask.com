@@ -6,6 +6,7 @@ date: 2026-04-06
 description: Lack of documentation, especially in the AI age, will only make everyone's job harder.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [software, culture]
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mn5qh4pu2l2w
 published: true
 ---
 

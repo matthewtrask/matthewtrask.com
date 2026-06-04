@@ -6,6 +6,7 @@ date: 2026-02-25
 description: Bits and pieces of advice I've picked up over the years.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [software-development, leadership]
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mn5qh4dtm62h
 published: true
 ---
 

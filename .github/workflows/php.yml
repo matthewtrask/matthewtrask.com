@@ -36,6 +36,21 @@ jobs:
     - name: Install JS dependencies
       run: npm install
 
+    - name: Register new posts with standard.site
+      env:
+        BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+      run: node standard-site-setup.mjs
+
+    - name: Commit registered posts
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add source/_posts/
+        if ! git diff --staged --quiet; then
+          git commit -m "Add atUri to new posts [skip ci]"
+          git push origin develop
+        fi
+
     - name: Build Site
       run: npm run prod
 
