@@ -8,6 +8,7 @@ cover_image: /assets/img/post-cover-image-2.png
 categories: [life, music]
 atUri:
 published: true
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mnhosjhw6322
 ---
 
 I recently joined a website community called [Dead Format](https://deadformat.com) which is a place for people
