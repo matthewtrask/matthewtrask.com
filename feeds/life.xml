@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Matthew Trask – life</title>
+        <link>https://matthewtrask.com</link>
+        <description>Posts in the "life" category from Matthew Trask</description>
+        <language>en-us</language>
+        <atom:link href="https://matthewtrask.com/feeds/life.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>Where I grew up</title>
+            <link>https://matthewtrask.com/blog/where-I-grew-up</link>
+            <guid isPermaLink="true">https://matthewtrask.com/blog/where-I-grew-up</guid>
+            <description><![CDATA[Atlanta is home, but one place taught me to be a human.]]></description>
+            <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+            <category>life</category>
+            <category>music</category>
+        </item>
+        <item>
+            <title>We all need someone to dance in the darkness with.</title>
+            <link>https://matthewtrask.com/blog/dancing-in-the-darkness</link>
+            <guid isPermaLink="true">https://matthewtrask.com/blog/dancing-in-the-darkness</guid>
+            <description><![CDATA[You don't have to go through things alone.]]></description>
+            <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+            <category>life</category>
+        </item>
+        <item>
+            <title>It Only Takes A Little To Move Up A Lot.</title>
+            <link>https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</link>
+            <guid isPermaLink="true">https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</guid>
+            <description><![CDATA[Even caring just 15% will help you go a long way.]]></description>
+            <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+            <category>life</category>
+            <category>career</category>
+        </item>
+    </channel>
+</rss>

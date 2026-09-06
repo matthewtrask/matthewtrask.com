@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Matthew Trask</title>
+        <link>https://matthewtrask.com</link>
+        <description>Thoughts on PHP, Leadership, Community, and more.</description>
+        <language>en-us</language>
+        <atom:link href="https://matthewtrask.com/blog/feed.xml" rel="self" type="application/rss+xml" />
+
+                    <item>
+                <title>Where I grew up</title>
+                <link>https://matthewtrask.com/blog/where-I-grew-up</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/where-I-grew-up</guid>
+                <description><![CDATA[Atlanta is home, but one place taught me to be a human.]]></description>
+                <pubDate>Thu, 04 Jun 2026 00:00:00 +0000</pubDate>
+                                                            <category>life</category>
+                                            <category>music</category>
+                                                </item>
+                    <item>
+                <title>We all need someone to dance in the darkness with.</title>
+                <link>https://matthewtrask.com/blog/dancing-in-the-darkness</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/dancing-in-the-darkness</guid>
+                <description><![CDATA[You don't have to go through things alone.]]></description>
+                <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+                                                            <category>life</category>
+                                                </item>
+                    <item>
+                <title>Lack of documentation is technical debt.</title>
+                <link>https://matthewtrask.com/blog/lack-of-docs-is-tech-debt</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/lack-of-docs-is-tech-debt</guid>
+                <description><![CDATA[Lack of documentation, especially in the AI age, will only make everyone's job harder.]]></description>
+                <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+                                                            <category>software</category>
+                                            <category>culture</category>
+                                                </item>
+                    <item>
+                <title>If you don&#039;t need it, yeet it.</title>
+                <link>https://matthewtrask.com/blog/if-you-dont-need-it-yeet-it</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/if-you-dont-need-it-yeet-it</guid>
+                <description><![CDATA[Stop cluttering repos with useless files.]]></description>
+                <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+                                                            <category>software</category>
+                                                </item>
+                    <item>
+                <title>It Only Takes A Little To Move Up A Lot.</title>
+                <link>https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</guid>
+                <description><![CDATA[Even caring just 15% will help you go a long way.]]></description>
+                <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+                                                            <category>life</category>
+                                            <category>career</category>
+                                                </item>
+                    <item>
+                <title>Advice I love</title>
+                <link>https://matthewtrask.com/blog/advice-I-love</link>
+                <guid isPermaLink="true">https://matthewtrask.com/blog/advice-I-love</guid>
+                <description><![CDATA[Bits and pieces of advice I've picked up over the years.]]></description>
+                <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+                                                            <category>software-development</category>
+                                            <category>leadership</category>
+                                                </item>
+            </channel>
+</rss>
