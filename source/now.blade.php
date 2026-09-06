@@ -20,7 +20,7 @@ description: What I'm currently focused on.
                 <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-4">
                     <p>
                         <!-- Replace with what you're currently building/working on -->
-                        Building out this site and writing more consistently. Working on a deeper understanding of the Laravel framework, the PHP core language, Python, AWS CDK, and leadership. Also working on rebuilding my curiousity.
+                        Building out this site and writing more consistently. Working on a deeper understanding of the Laravel framework, the PHP core language, Python, AWS CDK, and leadership. Also working on rebuilding my curiosity.
                     </p>
                 </div>
             </section>
@@ -32,13 +32,7 @@ description: What I'm currently focused on.
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>The Stranger</em> —  Albert Camus
-                        </span>
-                    </div>
-                    <div class="flex items-baseline gap-4">
-                        <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">book</span>
-                        <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Staff Engineer</em> — Will Larson
+                            <em>Dungeon Crawler Carl</em> —  Matt Dinniman
                         </span>
                     </div>
                 </div>
@@ -49,8 +43,7 @@ description: What I'm currently focused on.
                 <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-4">
                     <p>
                         <!-- Replace with what you're learning/exploring -->
-                        Digging deeper into AWS CDK, Python, and general developer tooling. Refreshing my OpenAPI knowledge.
-                        Leveraging Claude more into my day to day life and at work.
+                        2026/09/05 - Diving in deep with Claude Code, while seeking out analog alternatives to things.
                     </p>
                 </div>
             </section>
@@ -61,13 +54,13 @@ description: What I'm currently focused on.
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Beneath Medicine Tree</em> — Copeland
+                            <em>Rubber Soul</em> — Soulive
                         </span>
                     </div>
                     <div class="flex items-baseline gap-4">
                         <span class="font-mono text-[12px] text-gray-400 dark:text-gray-600 flex-shrink-0">album</span>
                         <span class="font-serif text-[17px] text-gray-700 dark:text-gray-300">
-                            <em>Being No One, Going Nowhere</em> — Strfkr
+                            <em>Abbey Road</em> — The Beatles
                         </span>
                     </div>
                 </div>
