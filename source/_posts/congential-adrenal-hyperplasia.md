@@ -23,7 +23,7 @@ To manage this I see an endocrinologist every year. Currently he calls me boring
 to replace the hormones my busted ass adrenal glands can't produce. Since I've had to take some sort of steroid since I was born, this most likely
 contributed to my less than average height. Boy howdy was that fun in high school.
 
-I'm writing this because of what happened earlier this year. Growing up, I never seeked out support groups or other people with this condition. I never saw it as a limiting thing,
+I'm writing this because of what happened earlier this year. Growing up, I never sought out support groups or other people with this condition. I never saw it as a limiting thing,
 so I never assumed that others would feel different, nor did I realize how rare of a condition this was. I wasn't aware of support groups because other than being short there wasn't much 
 support I needed. We had a good endocrinologist, and minus getting sick every so often as long as I took my medicine things were "normal". 
 
