@@ -16,6 +16,11 @@
                 Currently interested in API design, database optimization, event-driven systems, and developer tooling. When I'm not coding, I'm usually reading technical books or working on open source.
             </p>
         </div>
+        <div class="font-serif text-[18px] text-gray-700 dark:text-gray-300 leading-[1.85] space-y-6 max-w-2xl">
+            <p>
+                I created [theindex.fyi](https://theindex.fyi) as a way to centralize various indie and small web indices.
+            </p>
+        </div>
 
         <div class="mt-14 pt-8 border-t border-gray-100 dark:border-gray-900">
             <div class="flex items-center gap-6 font-mono text-[13px] text-gray-500 dark:text-gray-400">
