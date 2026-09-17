@@ -33,7 +33,7 @@
                 <a href="https://www.linkedin.com/in/matthew-trask/" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     linkedin
                 </a>
-                <a href="mailto:matt@matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
+                <a href="mailto:me@matthewtrask.com" class="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">
                     email
                 </a>
             </div>
