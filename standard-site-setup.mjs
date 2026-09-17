@@ -107,7 +107,7 @@ async function main() {
 
     const result = await createRecord(pds, token, did, 'site.standard.document', {
       $type: 'site.standard.document',
-      site: { $link: PUB_URI },
+      site: PUB_URI,
       title: fm.title?.replace(/^['"]|['"]$/g, '') ?? filename,
       path: `/blog/${filename}`,
       description: fm.description?.replace(/^['"]|['"]$/g, '') ?? '',
