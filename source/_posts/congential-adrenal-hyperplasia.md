@@ -2,7 +2,7 @@
 extends: _layouts.post
 section: content
 title: Congenital Adrenal Hyperplasia
-date: 2026-02-25
+date: 2026-09-17
 description: It's a mouthful of a condition that is pretty rare.
 cover_image: /assets/img/post-cover-image-2.png
 categories: [software-development, leadership]
