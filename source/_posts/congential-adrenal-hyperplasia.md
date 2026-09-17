@@ -8,6 +8,7 @@ cover_image: /assets/img/post-cover-image-2.png
 categories: [software-development, leadership]
 atUri: 
 published: true
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3mvpqnh337v2a
 ---
 
 If you just looked at me, you probably wouldn't be able to guess I have a condition that affects 1 in 10,000 to 1 in 20,000 births a year. Hell I didnt know anyone with this same
