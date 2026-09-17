@@ -14,6 +14,11 @@ If you just looked at me, you probably wouldn't be able to guess I have a condit
 condition until just this past June of 2026. What is this condition? It's called Congenital Adrenal Hyperplasia (CAH). I was born with it. It is a mutation of the CYP21A2 gene, which means I 
 do not produce cortisol, which leads my body to asking for more cortisol, not getting it, and then going into overdrive. It's super fun. 
 
+You might be wondering what cortisol is? It's the stress hormone. Cortisol is a hormone your adrenal glands are supposed to make, and it does a lot of quiet, unglamorous work such as regulating blood sugar, managing stress response, keeping inflammation in check, all that fun stuff. 
+My body doesn't make it, so my brain just keeps yelling at my adrenal glands to make more and instead of cortisol I end up with a surplus of hormones I really didn't order. 
+That's the "hyperplasia" part of CAH, my adrenal glands enlarging from being told to work overtime for a job they physically can't do. And when that system gets pushed past what it can handle, like it did for me at birth, you get an adrenal crisis: 
+basically your body running on empty with no cortisol to fall back on, which is exactly as dangerous as it sounds.
+
 When I was born, I basically was in an adrenal crisis from day 1. Being that I was born in Germany on an American military base, 
 the American doctors apparently had a hard time figuring it all out.  It was the German doctors at a hospital called Stadt Klinik 
 in Fulda that figured it all out and got me on the right stuff. Now I'm here, 39+ years later, 
