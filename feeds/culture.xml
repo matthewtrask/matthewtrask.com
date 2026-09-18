@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Matthew Trask – culture</title>
+        <link>https://matthewtrask.com</link>
+        <description>Posts in the "culture" category from Matthew Trask</description>
+        <language>en-us</language>
+        <atom:link href="https://matthewtrask.com/feeds/culture.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>Lack of documentation is technical debt.</title>
+            <link>https://matthewtrask.com/blog/lack-of-docs-is-tech-debt</link>
+            <guid isPermaLink="true">https://matthewtrask.com/blog/lack-of-docs-is-tech-debt</guid>
+            <description><![CDATA[Lack of documentation, especially in the AI age, will only make everyone's job harder.]]></description>
+            <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+            <category>software</category>
+            <category>culture</category>
+        </item>
+    </channel>
+</rss>

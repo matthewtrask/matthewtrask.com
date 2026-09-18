@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Matthew Trask – career</title>
+        <link>https://matthewtrask.com</link>
+        <description>Posts in the "career" category from Matthew Trask</description>
+        <language>en-us</language>
+        <atom:link href="https://matthewtrask.com/feeds/career.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>It Only Takes A Little To Move Up A Lot.</title>
+            <link>https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</link>
+            <guid isPermaLink="true">https://matthewtrask.com/blog/it-only-takes-a-little-to-move-up</guid>
+            <description><![CDATA[Even caring just 15% will help you go a long way.]]></description>
+            <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+            <category>life</category>
+            <category>career</category>
+        </item>
+    </channel>
+</rss>
