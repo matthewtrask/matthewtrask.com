@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * Jigsaw doesn't ship an artisan, so this is ours: a thin Symfony Console
+ * app for the little scaffolding chores around this site.
+ *
+ *     ./artisan make:post "Some title I have opinions about"
+ *
+ * Drop new commands in console/ (App\Console\) and register them below.
+ */
+
+require __DIR__ . '/vendor/autoload.php';
+
+use App\Console\MakePostCommand;
+use Symfony\Component\Console\Application;
+
+$app = new Application('matthewtrask.com', '1.0.0');
+
+$app->add(new MakePostCommand(__DIR__ . '/source/_posts'));
+
+$app->run();

@@ -19,8 +19,10 @@ use App\Listeners\GenerateIndex;
 use App\Listeners\GenerateOgImages;
 use App\Listeners\GenerateSitemap;
 use App\Listeners\GenerateTagFeeds;
+use App\Listeners\ValidateRelatedPosts;
 
 $events->beforeBuild(GenerateCategoryPages::class);
+$events->beforeBuild(ValidateRelatedPosts::class);
 
 $events->afterBuild(GenerateSitemap::class);
 $events->afterBuild(GenerateIndex::class);

@@ -88,12 +88,16 @@
                     @endforeach
                 </div>
             @endif
+
+            @include('_components.post-follows')
         </header>
 
         {{-- Post content --}}
         <div class="prose prose-gray dark:prose-invert max-w-none post-content">
             @yield('content')
         </div>
+
+        @include('_components.related-posts')
 
     </article>
 @endsection
