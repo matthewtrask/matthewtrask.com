@@ -19,7 +19,7 @@ First off, the Mayo Clinic is super freaking cool. It's a gorgeous campus, and i
 
 ### The initial visit
 
-When I got to the clinic at 7:30am, I had to be fasted. Which is totally fine for me. I did have snacks though. The initial stuff included 26 tubes of blood taken, a cat scan of my left arm and left leg, a full body dexa scan, a left hip dexa scan, and a few exercise type things to establish a baseline. Then we got into the Oura Ring part and finished up with a few surveys and they let me go on my way, which was back to the Twin Cities for what turned out to be $2 beer night at the Minnesota Twins. Boy fucking howdy. 
+When I got to the clinic at 7:30am, I had to be fasted. Which is totally fine for me. I did have snacks though - protein bars and gummy worms. The snacks of a champion. The initial lab work included 26 tubes of blood taken, a cat scan of my left arm and left leg, a full body dexa scan, a left hip dexa scan, and a few exercise type things to establish a baseline. Then we got into the Oura Ring part and finished up with a few surveys and they let me go on my way, which was back to the Twin Cities for what turned out to be $2 beer night at the Minnesota Twins. Boy fucking howdy. 
 
 ### The study part
 

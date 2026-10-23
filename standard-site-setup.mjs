@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Registers new blog posts with standard.site (AT Protocol).
 // Skips posts that already have atUri in frontmatter.
-// Writes atUri directly into each new post's frontmatter.
+// Writes atUri directly into each new post's frontmatter, and sets its date to the day it was registered.
 // Usage: BSKY_APP_PASSWORD=your-app-password node standard-site-setup.mjs
 
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
@@ -25,6 +25,18 @@ function parseFrontmatter(content) {
     data[line.slice(0, colon).trim()] = line.slice(colon + 1).trim();
   }
   return data;
+}
+
+// Today's date in Central time, so a late-evening push isn't stamped as tomorrow (CI runs in UTC)
+function today() {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Chicago' }).format(new Date());
+}
+
+function writeDate(content, date) {
+  // Replace the date line in the frontmatter, or add one if it's missing
+  return /^date:.*$/m.test(content)
+    ? content.replace(/^date:.*$/m, `date: ${date}`)
+    : content.replace(/(\n---\n)/, `\ndate: ${date}\n---\n`);
 }
 
 function writeAtUri(content, uri) {
@@ -101,9 +113,9 @@ async function main() {
 
   for (const { file, content, fm } of newPosts) {
     const filename = basename(file, '.md');
-    const publishedAt = fm.date
-      ? new Date(fm.date).toISOString()
-      : new Date().toISOString();
+    // First publish: stamp the post with the date it actually went live
+    const date = today();
+    const publishedAt = new Date().toISOString();
 
     const result = await createRecord(pds, token, did, 'site.standard.document', {
       $type: 'site.standard.document',
@@ -114,9 +126,9 @@ async function main() {
       publishedAt,
     });
 
-    const updated = writeAtUri(content, result.uri);
+    const updated = writeAtUri(writeDate(content, date), result.uri);
     writeFileSync(join(POSTS_DIR, file), updated, 'utf8');
-    console.log(`  ${file} → ${result.uri}`);
+    console.log(`  ${file} → ${result.uri} (date: ${date})`);
   }
 
   console.log('\nDone. Post files updated with atUri.');
