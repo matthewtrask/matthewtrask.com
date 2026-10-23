@@ -8,6 +8,7 @@ cover_image: /assets/img/post-cover-image-2.png
 categories: [life, fitness, wearable]
 follows: [congential-adrenal-hyperplasia]
 published: true
+atUri: at://did:plc:6qkqppcvfw5ngci5mvlzlfue/site.standard.document/3myizop6ebh2p
 ---
 
 I recently talked about the condition I have and how I was going up to Rochester, MN to the Mayo Clinic to get an Oura Ring as part of a study. I figured now a few weeks in I'd give some thoughts about it. 
